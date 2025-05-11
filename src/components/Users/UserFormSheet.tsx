@@ -14,7 +14,6 @@ import { Switch } from "@/components/ui/switch"
 import { Checkbox } from "@/components/ui/checkbox"
 import { toast } from "sonner"
 
-
 type UserFormValues = {
     name: string
     email: string
@@ -196,7 +195,7 @@ export function UserFormSheet({
                         </div>
                     </div>
                     <div className="flex-1" />
-                    <div className="flex justify-end gap-3 mt-16">
+                    <div className="flex justify-end gap-3 mt-6 md:mt-16">
                         <SheetClose asChild>
                             <Button
                                 type="button"

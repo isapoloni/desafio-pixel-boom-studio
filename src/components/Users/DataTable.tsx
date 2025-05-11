@@ -23,7 +23,7 @@ export function DataTable<TData>({ columns, data }: DataTableProps<TData>) {
 
     return (
         <div className="rounded-md">
-            <Table className="mb-5">
+            <Table>
                 <TableBody>
                     {paginatedData.length ? (
                         paginatedData.map((row, rowIndex) => (
@@ -44,7 +44,7 @@ export function DataTable<TData>({ columns, data }: DataTableProps<TData>) {
                     )}
                 </TableBody>
             </Table>
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-2 py-4 border-t bg-white flex-wrap">
+            <div className="flex flex-col gap-4 items-center justify-center sm:flex-row sm:items-center sm:justify-between px-2 py-4 border-t bg-white flex-wrap mt-5">
                 <div className="text-sm !text-gray-muted whitespace-nowrap">
                     {`${paginatedData.length} itens de ${data.length}`}
                 </div>
